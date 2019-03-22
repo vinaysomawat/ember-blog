@@ -1,5 +1,77 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<div class="container">
+  <div class="menu">
+    {{#link-to "index" class="logo"}}
+      <h1>
+        <em>Acadbit</em>
+      </h1>
+    {{/link-to}}
+    <div class="links">
+      {{#link-to "home" class="menu-about"}}
+        Home
+      {{/link-to}}
+      {{#link-to "dsa" class="menu-about"}}
+        DSA
+      {{/link-to}}
+      {{#link-to "c" class="menu-about"}}
+        C
+      {{/link-to}}
+      {{#link-to "c++" class="menu-about"}}
+        C++
+      {{/link-to}}
+      {{#link-to "python" class="menu-about"}}
+        Python
+      {{/link-to}}
+      {{#link-to "java" class="menu-about"}}
+        Java
+      {{/link-to}}
+      {{#link-to "javascript" class="menu-about"}}
+        JavaScript
+      {{/link-to}}
+      {{#link-to "programming" class="menu-about"}}
+        Programming
+      {{/link-to}}
+      {{#link-to "android" class="menu-about"}}
+        Android 
+      {{/link-to}}
+      {{#link-to "webdev" class="menu-about"}}
+        Web-Dev
+      {{/link-to}}
+    </div>
+    <div class="links">
+      {{#link-to "machinelearning" class="menu-about"}}
+        Machine Learning
+      {{/link-to}}
+      {{#link-to "datascience" class="menu-about"}}
+        Data Science
+      {{/link-to}}
+      {{#link-to "research" class="menu-about"}}
+        Research
+      {{/link-to}}
+      {{#link-to "interview" class="menu-about"}}
+        Interview Q&A
+      {{/link-to}}
+      {{#link-to "writeforus" class="menu-about"}}
+        Write for us
+      {{/link-to}}
+    </div>
+  </div>
+  <div class="body">
+    {{outlet}}
+  </div>
+  <div id="footer">
+    <div class="row">
+      <div class="column">
+        <h3>Acadbit</h3>
+        <p>Programming<br>Design<br>&<br>Development</p>
+      </div>
+      <div class="column">
+        <h3>Vision</h3>
+        <p>Our vision is to help the students to grow their technical skills.</p>
+      </div>
+      <div class="column">
+        <h3>About the founder</h3>
+        <p>Vinay Somawat<br>Department of Computer Science<br>National Institute of Technology, Warangal</p>
+      </div>
+    </div>
+  </div>
+</div>

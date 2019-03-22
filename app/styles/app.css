@@ -1,0 +1,26 @@
+#wrapper {
+    min-height: 100%;
+    overflow: auto;
+}
+
+#footer {
+    position: relative;
+    left: 2px;
+    right: 2px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
